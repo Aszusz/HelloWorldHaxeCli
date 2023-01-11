@@ -17,14 +17,14 @@ jobs:
           haxe -version
           haxelib install hxcpp
           
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         name: Check out repository
       
       - name: Run haxe
         run: haxe --main Main --cpp cpp
         
       - name: Upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with: 
           name: assets
           path: cpp/Main
