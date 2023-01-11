@@ -20,9 +20,8 @@ jobs:
       - uses: actions/checkout@v3
         name: Check out repository
 
-      - name: Run haxe using MSVC
-      - uses: ilammy/msvc-dev-cmd@v1
-      - run: haxe --main Main --cpp cpp
+      - name: Run haxe
+        run: haxe --main Main --cpp cpp
         
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
