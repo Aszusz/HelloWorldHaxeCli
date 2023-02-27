@@ -7,6 +7,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    container: appimagecrafters/appimage-builder:latest
     
     steps:
       - name: Set up Haxe
